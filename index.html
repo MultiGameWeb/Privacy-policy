@@ -1,1 +1,1051 @@
-HI
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Chess - Privacy Policy, Account Deletion, Data Safety and App Information by VK APP Studio." />
+  <meta name="robots" content="index, follow" />
+  <title>AI Chess | Privacy Policy & App Information</title>
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1b2d;
+      --card: #10243a;
+      --card-2: #132a43;
+      --text: #f6f9ff;
+      --muted: #b8c7d9;
+      --blue: #49a6ff;
+      --cyan: #45e0ff;
+      --purple: #a874ff;
+      --green: #42d78b;
+      --gold: #ffd166;
+      --orange: #ff9f43;
+      --red: #ff6b6b;
+      --border: rgba(255,255,255,0.10);
+      --shadow: 0 18px 50px rgba(0,0,0,0.25);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(73,166,255,.16), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(168,116,255,.14), transparent 28%),
+        linear-gradient(180deg, #06101d 0%, #081522 45%, #07111f 100%);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(7,17,31,.82);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: .2px;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #172b44, #0f1f32);
+      border: 1px solid rgba(255,255,255,.1);
+      font-size: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+
+    nav::-webkit-scrollbar { display: none; }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      font-size: 14px;
+      transition: .2s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+      background: rgba(73,166,255,.12);
+    }
+
+    .hero {
+      padding: 78px 0 58px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .hero-copy, .hero-card {
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(16,36,58,.90), rgba(11,28,47,.88));
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+    }
+
+    .hero-copy {
+      padding: 44px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(69,224,255,.10);
+      filter: blur(30px);
+      right: -100px;
+      top: -100px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(69,224,255,.26);
+      color: #95efff;
+      background: rgba(69,224,255,.08);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3, h4 { line-height: 1.2; }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(40px, 7vw, 76px);
+      letter-spacing: -2px;
+      background: linear-gradient(90deg, #fff, #8edfff, #c7a0ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      color: #06101d;
+      background: linear-gradient(135deg, #55c9ff, #8fc5ff);
+      box-shadow: 0 10px 24px rgba(73,166,255,.22);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.05);
+      border-color: var(--border);
+      color: #fff;
+    }
+
+    .hero-card {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .hero-badge {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 11px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .info-row:last-child { border-bottom: 0; }
+
+    .info-row span:first-child { color: var(--muted); }
+    .info-row strong { text-align: right; word-break: break-word; }
+
+    main { padding-bottom: 70px; }
+
+    section {
+      margin-top: 26px;
+      padding: 34px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      background: rgba(13,27,45,.78);
+      box-shadow: 0 12px 40px rgba(0,0,0,.16);
+    }
+
+    .section-head {
+      margin-bottom: 22px;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(168,116,255,.10);
+      color: #d1b5ff;
+      border: 1px solid rgba(168,116,255,.22);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 11px 0 8px;
+      letter-spacing: -.6px;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 850px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(19,42,67,.95), rgba(13,31,50,.95));
+      border: 1px solid var(--border);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 21px;
+    }
+
+    .accent-blue { border-left: 4px solid var(--blue); }
+    .accent-green { border-left: 4px solid var(--green); }
+    .accent-gold { border-left: 4px solid var(--gold); }
+    .accent-purple { border-left: 4px solid var(--purple); }
+    .accent-orange { border-left: 4px solid var(--orange); }
+    .accent-red { border-left: 4px solid var(--red); }
+
+    .highlight {
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .blue { color: #83d2ff; }
+    .cyan { color: #75efff; }
+    .purple { color: #c7a7ff; }
+    .green { color: #6ee9a8; }
+    .gold { color: #ffe08a; }
+    .orange { color: #ffc078; }
+    .red { color: #ff9e9e; }
+
+    .notice {
+      margin: 20px 0;
+      padding: 16px 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(73,166,255,.18);
+      background: rgba(73,166,255,.07);
+      color: #d8ecff;
+    }
+
+    .success {
+      border-color: rgba(66,215,139,.22);
+      background: rgba(66,215,139,.07);
+      color: #cef9df;
+    }
+
+    .warning {
+      border-color: rgba(255,159,67,.22);
+      background: rgba(255,159,67,.07);
+      color: #ffe5c8;
+    }
+
+    .danger {
+      border-color: rgba(255,107,107,.22);
+      background: rgba(255,107,107,.07);
+      color: #ffd7d7;
+    }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      position: relative;
+      padding: 16px 18px 16px 54px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 17px;
+      top: 16px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: #081522;
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .feature {
+      text-align: center;
+      padding: 22px 16px;
+    }
+
+    .feature-icon {
+      font-size: 30px;
+      margin-bottom: 9px;
+    }
+
+    .feature h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .dashboard-row {
+      display: grid;
+      grid-template-columns: 1.1fr 1.5fr;
+      gap: 10px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .dashboard-row:last-child { border-bottom: 0; }
+    .dashboard-row .label { color: var(--muted); font-weight: 700; }
+
+    .tech-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .tech-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: rgba(255,255,255,.06);
+      font-size: 22px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0 50px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .footer strong { color: #fff; }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .top-link {
+      margin-top: 14px;
+      display: inline-block;
+      color: #8edfff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .grid-3,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy { padding: 30px; }
+
+      section { padding: 24px; }
+
+      .dashboard-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container { width: min(100% - 20px, 1120px); }
+
+      .nav { min-height: 64px; }
+
+      .brand span:last-child { display: none; }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+      }
+
+      .hero-copy p { font-size: 16px; }
+
+      .hero-card { padding: 22px; }
+
+      section {
+        margin-top: 16px;
+        padding: 20px;
+        border-radius: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">♟</span>
+        <span>AI Chess · VK APP Studio</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#privacy-policy">Privacy</a>
+        <a href="#account-deletion">Deletion</a>
+        <a href="#data-safety">Data Safety</a>
+        <a href="#updates">Updates</a>
+        <a href="#source-code-sale">Source Code</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="top"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Official AI Chess Information</div>
+          <h1>AI Chess</h1>
+          <p>
+            Privacy Policy, Account Deletion, Data Safety and App Information for
+            <span class="highlight">AI Chess</span>, published by
+            <span class="cyan">VK APP Studio</span>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#privacy-policy">🔐 Privacy Policy</a>
+            <a class="btn btn-secondary" href="#account-deletion">🗑️ Account Deletion</a>
+            <a class="btn btn-secondary" href="#data-safety">🛡️ Data Safety</a>
+            <a class="btn btn-secondary" href="#updates">⚙️ App Updates</a>
+            <a class="btn btn-secondary" href="#source-code-sale">💻 Source Code for Sale</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div>
+            <div class="hero-badge">♟️</div>
+            <h2 style="margin-top:0;">Developer Information</h2>
+            <p class="small">Official contact and policy details</p>
+          </div>
+
+          <div class="info-list">
+            <div class="info-row">
+              <span>App</span>
+              <strong>AI Chess</strong>
+            </div>
+            <div class="info-row">
+              <span>Developer</span>
+              <strong>VK APP Studio</strong>
+            </div>
+            <div class="info-row">
+              <span>Email</span>
+              <strong>kammarivinaykumar981@gmail.com</strong>
+            </div>
+            <div class="info-row">
+              <span>Last Updated</span>
+              <strong>September 2026</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy-policy">
+      <div class="section-head">
+        <span class="section-tag">Policy</span>
+        <h2>Privacy Policy</h2>
+        <p>
+          AI Chess is committed to protecting your privacy. This policy explains
+          what information may be collected, why it is used, how it is protected,
+          and how users can request account and data deletion.
+        </p>
+      </div>
+
+      <div class="notice">
+        <strong class="blue">Policy details:</strong>
+        AI Chess may use account, gameplay and security-related information to
+        provide cloud features, player profiles, multiplayer functionality,
+        statistics and other app functionality.
+      </div>
+
+      <div class="grid">
+        <div class="card accent-blue">
+          <h3>1. Introduction</h3>
+          <p>
+            This Privacy Policy applies to the AI Chess application and related
+            services operated by VK APP Studio.
+          </p>
+        </div>
+
+        <div class="card accent-purple">
+          <h3>2.1 Account Information</h3>
+          <ul>
+            <li>Unique User ID (UID)</li>
+            <li>Email address</li>
+            <li>Display name / username</li>
+            <li>Authentication information</li>
+          </ul>
+          <p class="small">Authentication may use Google Firebase Authentication.</p>
+        </div>
+
+        <div class="card accent-gold">
+          <h3>2.2 Gameplay Information</h3>
+          <ul>
+            <li>Elo / rating information</li>
+            <li>Wins, losses and draws</li>
+            <li>Puzzle completion history</li>
+            <li>Achievements and game progress</li>
+          </ul>
+        </div>
+
+        <div class="card accent-green">
+          <h3>2.3 Virtual Currency</h3>
+          <ul>
+            <li>In-game coin balance</li>
+            <li>Daily puzzle rewards</li>
+            <li>Referral rewards</li>
+            <li>Other eligible in-game rewards</li>
+          </ul>
+        </div>
+
+        <div class="card accent-orange">
+          <h3>2.4 Device & Security Information</h3>
+          <p>
+            Limited device-related information may be processed where technically
+            necessary for application security, fraud prevention, referral abuse
+            prevention, compatibility or service reliability.
+          </p>
+        </div>
+
+        <div class="card accent-red">
+          <h3>3. Information We Do Not Collect</h3>
+          <ul>
+            <li>Real-time GPS location</li>
+            <li>Contacts</li>
+            <li>Microphone recordings</li>
+            <li>Photo gallery contents</li>
+            <li>Biometric records</li>
+            <li>Banking credentials</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:16px;">
+        <div class="card accent-blue">
+          <h3>4. How Information Is Used</h3>
+          <ul>
+            <li>Maintain player profiles</li>
+            <li>Save game progress and statistics</li>
+            <li>Leaderboards and ratings</li>
+            <li>Online multiplayer and matchmaking</li>
+            <li>Puzzles and achievements</li>
+            <li>Referral functionality</li>
+            <li>Security and fraud prevention</li>
+          </ul>
+        </div>
+
+        <div class="card accent-purple">
+          <h3>5. Third-Party Services</h3>
+          <p><strong class="purple">Google Firebase</strong></p>
+          <ul>
+            <li>Firebase Authentication</li>
+            <li>Cloud Firestore</li>
+            <li>Cloud Functions</li>
+          </ul>
+          <p><strong class="cyan">Google Play Services</strong></p>
+          <p class="small">Platform and Google Play related services.</p>
+          <p><strong class="orange">Branch.io</strong></p>
+          <p class="small">Optional deep-link attribution for referral links, where enabled.</p>
+        </div>
+
+        <div class="card accent-green">
+          <h3>6. Data Security</h3>
+          <p>
+            Data transmitted between the application and backend services is
+            protected using HTTPS/TLS where supported by the relevant service
+            infrastructure. Security controls are used to protect information
+            from unauthorized access.
+          </p>
+          <p class="small">No method of transmission or storage can guarantee absolute security.</p>
+        </div>
+
+        <div class="card accent-gold">
+          <h3>7. Children's Privacy</h3>
+          <p>
+            AI Chess is intended to be family-friendly. The developer does not
+            knowingly collect personal information from children in violation of
+            applicable privacy laws.
+          </p>
+        </div>
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+
+    <section id="account-deletion">
+      <div class="section-head">
+        <span class="section-tag">User Rights</span>
+        <h2>Account Deletion</h2>
+        <p>
+          Users may request deletion of their account and associated personal data.
+        </p>
+      </div>
+
+      <div class="notice success">
+        <strong class="green">In-app deletion:</strong>
+        Profile → Settings → Delete Account → Confirm Deletion
+      </div>
+
+      <div class="grid">
+        <div class="card accent-blue">
+          <h3>1. Self-Service In-App Deletion</h3>
+          <p>
+            When available, users can delete their account directly from the app
+            using the account deletion option in Settings.
+          </p>
+        </div>
+
+        <div class="card accent-purple">
+          <h3>2. Web / Email Request</h3>
+          <p>
+            Users who have uninstalled the app can submit an account deletion request
+            by email.
+          </p>
+          <p>
+            <strong class="cyan">Email:</strong>
+            kammarivinaykumar981@gmail.com
+          </p>
+          <p>
+            <strong class="purple">Subject:</strong>
+            Account Deletion Request
+          </p>
+          <p class="small">
+            Include the registered email address or other information needed to
+            identify the account.
+          </p>
+        </div>
+
+        <div class="card accent-red">
+          <h3>3. Data That May Be Deleted</h3>
+          <ul>
+            <li>Firebase Authentication account</li>
+            <li>User profile information</li>
+            <li>Username and avatar/profile information</li>
+            <li>Rating and related statistics</li>
+            <li>Referral information and codes</li>
+            <li>Stored game-related records associated with the account</li>
+            <li>Chat records where applicable</li>
+          </ul>
+        </div>
+
+        <div class="card accent-green">
+          <h3>4. Deletion Time</h3>
+          <p>
+            Deletion requests are processed within
+            <strong class="green">7 business days</strong>, subject to applicable
+            technical, legal, security or fraud-prevention retention requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="notice warning">
+        <strong class="orange">Important:</strong>
+        Some records may need to be retained where required by law, security,
+        fraud prevention, dispute handling or other legitimate obligations.
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+
+    <section id="returns">
+      <div class="section-head">
+        <span class="section-tag">Rewards</span>
+        <h2>Virtual Coins & Returns Policy</h2>
+        <p>
+          Virtual rewards in AI Chess are digital in-game items intended for gameplay
+          and entertainment.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card accent-gold">
+          <h3>Virtual Currency</h3>
+          <ul>
+            <li>Has no real-world cash value</li>
+            <li>Cannot be exchanged for cash</li>
+            <li>Cannot be converted into cryptocurrency</li>
+            <li>Not transferable outside the application</li>
+          </ul>
+        </div>
+
+        <div class="card accent-orange">
+          <h3>Refunds / Returns</h3>
+          <p>
+            Free gameplay rewards, referral rewards, bonuses and similar virtual
+            items are not cash-equivalent purchases. Account deletion does not
+            create a cash refund entitlement for virtual rewards.
+          </p>
+        </div>
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+
+    <section id="data-safety">
+      <div class="section-head">
+        <span class="section-tag">Google Play</span>
+        <h2>Data Safety Summary</h2>
+        <p>
+          This section summarizes the types of data that may be processed for
+          account functionality, gameplay and security. Play Console declarations
+          should always match the actual current app behavior.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="dashboard-row">
+          <div class="label">Collects data</div>
+          <div><strong class="green">Yes</strong> — where required for account functionality, gameplay, security and related services.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Encrypted in transit</div>
+          <div><strong class="green">Yes</strong> — where supported by the applicable service infrastructure.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Data deletion</div>
+          <div><strong class="green">Yes</strong> — account and data deletion requests are supported.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Personal information</div>
+          <div>Email address, user ID, username/name where required for account features.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">App activity</div>
+          <div>Gameplay information, game progress, ratings, achievements and related activity.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Device / other IDs</div>
+          <div>Limited identifiers where necessary for security, compatibility or fraud-prevention functions.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Purpose</div>
+          <div>App functionality, account management, authentication, game progress and security.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Service providers</div>
+          <div>External service providers such as Firebase may process data as necessary to operate the app.</div>
+        </div>
+        <div class="dashboard-row">
+          <div class="label">Required / optional</div>
+          <div>Some features may work without an account, while cloud profiles, multiplayer, saved progress or other services may require sign-in.</div>
+        </div>
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+
+    <section id="updates">
+      <div class="section-head">
+        <span class="section-tag">Technical Updates</span>
+        <h2>Latest App Improvements</h2>
+        <p>
+          Recent technical and visual improvements made to AI Chess.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card accent-gold">
+          <div class="tech-title">
+            <div class="tech-icon">♟️</div>
+            <div>
+              <h3 style="margin:0;">Front Pawn Uniform Design Update</h3>
+            </div>
+          </div>
+          <p>
+            Previously, front pawns could display different visual variants depending
+            on their board column. The pawn design has been standardized.
+          </p>
+          <ul>
+            <li>All 8 White front pawns use the same classic Staunton-inspired look.</li>
+            <li>All 8 Black front pawns use the same classic Staunton-inspired look.</li>
+            <li>Smooth pedestal base, collar ring, spherical head and subtle gloss.</li>
+            <li>Consistent pawn appearance across every file/column.</li>
+          </ul>
+          <p><strong>Other pieces retain their distinct traditional shapes:</strong></p>
+          <ul>
+            <li>Rook / Elephant</li>
+            <li>King</li>
+            <li>Bishop / Camel</li>
+            <li>Knight / Horse</li>
+            <li>Queen</li>
+          </ul>
+        </div>
+
+        <div class="card accent-green">
+          <div class="tech-title">
+            <div class="tech-icon">🛡️</div>
+            <div>
+              <h3 style="margin:0;">App Force Stopping / Auto-Closing Resolved</h3>
+            </div>
+          </div>
+
+          <p><strong>1. Android Manifest Service Merge Fix</strong></p>
+          <p class="small">
+            Removed a problematic service override associated with startup package-manager
+            issues and used standard metadata configuration where appropriate.
+          </p>
+
+          <p><strong>2. Firebase Singleton Initialization Protection</strong></p>
+          <p class="small">
+            Firebase-dependent managers could previously throw an IllegalStateException
+            during early startup. Startup handling was changed to use null-safe
+            initialization methods.
+          </p>
+
+          <p><strong>3. Fail-Safe Startup</strong></p>
+          <ul>
+            <li>UserProfileManager initialization is protected.</li>
+            <li>ReferralManager initialization is protected.</li>
+            <li>Deep-link parsing is protected against startup exceptions.</li>
+            <li>Safer Firebase option fallback handling was added where required.</li>
+          </ul>
+
+          <div class="notice success" style="margin-bottom:0;">
+            <strong class="green">✓ Startup stability improved</strong><br />
+            Known startup failure paths were addressed.
+          </div>
+        </div>
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+
+    <section id="features">
+      <div class="section-head">
+        <span class="section-tag">App Features</span>
+        <h2>AI Chess Features</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card feature"><div class="feature-icon">♟️</div><h3>Online Chess</h3></div>
+        <div class="card feature"><div class="feature-icon">📴</div><h3>Offline Chess</h3></div>
+        <div class="card feature"><div class="feature-icon">👤</div><h3>Player Profiles</h3></div>
+        <div class="card feature"><div class="feature-icon">🏆</div><h3>Ratings / Elo</h3></div>
+        <div class="card feature"><div class="feature-icon">🌐</div><h3>Multiplayer</h3></div>
+        <div class="card feature"><div class="feature-icon">🧩</div><h3>Puzzles</h3></div>
+        <div class="card feature"><div class="feature-icon">🏅</div><h3>Achievements</h3></div>
+        <div class="card feature"><div class="feature-icon">🎁</div><h3>Referral Rewards</h3></div>
+        <div class="card feature"><div class="feature-icon">📊</div><h3>Game Statistics</h3></div>
+        <div class="card feature"><div class="feature-icon">⚙️</div><h3>Account Management</h3></div>
+        <div class="card feature"><div class="feature-icon">🗑️</div><h3>Data Deletion</h3></div>
+      </div>
+    </section>
+
+
+    <section id="source-code-sale">
+      <div class="section-head">
+        <span class="section-tag">Available</span>
+        <h2>Source Code for Sale</h2>
+        <p>
+          The <strong class="gold">AI Chess source code</strong> is available for sale.
+          For pricing, purchase details, licensing, and source-code enquiries, please contact us directly.
+        </p>
+      </div>
+
+      <div class="card accent-gold" style="text-align:center; padding:30px;">
+        <div style="font-size:42px; margin-bottom:10px;">💻♟️</div>
+        <h3 style="font-size:24px; margin-bottom:10px;">AI Chess Source Code Available</h3>
+        <p>
+          <strong class="gold">Source Code for Sale</strong>
+        </p>
+        <p class="small">
+          Contact us for source-code purchase details and availability.
+        </p>
+        <a
+          class="btn btn-primary"
+          href="tel:7981587505"
+          style="margin-top:12px;"
+          aria-label="Call 7981587505 about AI Chess source code"
+        >
+          📞 Contact: 7981587505
+        </a>
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <span class="section-tag">Support</span>
+        <h2>Contact</h2>
+        <p>For privacy, account deletion, data-related requests, or app support.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card accent-blue">
+          <h3>VK APP Studio</h3>
+          <p>Developer of AI Chess</p>
+          <p>
+            <strong class="cyan">Email:</strong>
+            <a href="mailto:kammarivinaykumar981@gmail.com">kammarivinaykumar981@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="card accent-purple">
+          <h3>Privacy / Deletion Requests</h3>
+          <p>
+            Use the email address above for privacy questions, account deletion
+            requests, data-related requests and support.
+          </p>
+        </div>
+      </div>
+
+      <a class="top-link" href="#top">↑ Back to top</a>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p><strong>© 2026 VK APP Studio · AI Chess</strong></p>
+      <p class="small">
+        Privacy Policy · Account Deletion · Data Safety
+      </p>
+      <p class="small">Last Updated: September 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
